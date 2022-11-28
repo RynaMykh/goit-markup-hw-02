@@ -1,10 +1,12 @@
 :root{
     --primary-text-color:#757575;
+    --secondary-text-color: rgba(255, 255, 255, 0.6);
     --title-text-color: #212121;
     --accent-color: #2196F3;
     --primary-white-color: #FFFFFF;
     --primary-logo-color: #000000;
     --primary-gray-color: #F5F4FA;
+    --accent-background-color: #2F303A;
 }
 
 body {
@@ -73,7 +75,7 @@ body {
 
 /*Hero*/
 .hero {
-    background-color:#2F303A;
+    background-color: var(--accent-background-color);
 }
 .hero-title {
     color: var(--primary-white-color);
@@ -167,7 +169,7 @@ body {
 }
 
 .page-footer {
-    background-color:#2F303A ;
+    background-color: var(--accent-background-color);
     color: var(--primary-white-color);
 
     font-size: 14px;
@@ -184,7 +186,7 @@ body {
 }
 
 .contacts-footer .link {
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--secondary-text-color);
     text-decoration: none;
 }
 
@@ -202,4 +204,14 @@ body {
 
     font-size: 16px;
     line-height: 1.88;
+}
+
+.is-hidden {
+    visibility: hidden;
+    pointer-events: none;
+    position: absolute;
+}
+
+.address {
+    font-style: normal
 }
